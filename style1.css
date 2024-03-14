@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#imageContainer {
+    position: relative;
+}
+
+#quizImage {
+    width: 100vw; /* Adjust the image width as needed */
+    max-width: 1000px; /* Set maximum width for larger screens */
+    height: 60vh; /* Maintain aspect ratio */
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-size: cover;
+}
+
+#timer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2em;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#playQuiz {
+    display: none;
+}
+
+.action-button {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.action-button:hover {
+    background-color: #2980b9;
+}
+/* Default styles */
+
+/* Add your default styles here */
+
+/* Media query for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+
+    /* Example: */
+    .container {
+        padding: 10px;
+    }
+}
+
+/* Media query for screens between 601px and 1024px */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Adjust styles for medium-sized screens */
+
+    /* Example: */
+    .container {
+        max-width: 80%;
+    }
+}
+
+/* Media query for screens larger than 1024px */
+@media only screen and (min-width: 1025px) {
+    /* Adjust styles for larger screens */
+
+    /* Example: */
+    .container {
+        max-width: 1200px;
+    }
+}
+

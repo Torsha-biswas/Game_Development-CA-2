@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://media.istockphoto.com/id/1305169776/photo/q-and-a-concept-yellow-question-mark-glowing-amid-black-question-marks-on-black-background.webp?b=1&s=170667a&w=0&k=20&c=S9qLeT1eGgbyjZ9T01mQnPf4TknDEXAUyDgUMXK_3bg=');
+}
+
+.container {
+    width: 65rem;
+    box-shadow: 0px 0px 5px grey;
+    display: flex;
+    background-color: rgb(149, 233, 223);
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.col {
+    text-align: justify;
+    padding: 25px;
+    width: 100%;
+}
+
+#submit {
+    width: 100%;
+    background-color: rgb(47, 8, 73);
+    transition: 0.5s;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: rgb(34, 6, 53);
+}
+
+.box {
+    box-shadow: 0px -1px 1px rgb(119, 6, 72);
+    width: 100%;
+}
+.action-button{
+    color: blue;
+    border: 1px solid white;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin: 20px;
+}
+/* Default styles */
+
+/* Add your default styles here */
+
+/* Media query for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+
+    /* Example: */
+    .container {
+        padding: 10px;
+    }
+}
+
+/* Media query for screens between 601px and 1024px */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Adjust styles for medium-sized screens */
+
+    /* Example: */
+    .container {
+        max-width: 80%;
+    }
+}
+
+/* Media query for screens larger than 1024px */
+@media only screen and (min-width: 1025px) {
+    /* Adjust styles for larger screens */
+
+    /* Example: */
+    .container {
+        max-width: 1200px;
+    }
+}

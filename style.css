@@ -1,0 +1,63 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-image: url('https://media.istockphoto.com/id/1224376767/photo/little-kid-playing-with-cards-of-words-and-pictures.webp?b=1&s=170667a&w=0&k=20&c=16U1CFWE9DAqGuAZbNO-2pKwJ8SobUFPgh_evzFx-78=');
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.game-name {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease-in-out;
+    color: white;
+}
+
+.quote {
+    font-size: 2.2em;
+    margin-bottom: 65px;
+    color: #0c0b0d;
+    border: solid black;
+    font-weight: bolder;
+}
+
+.action-button, .volume-button {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    background-color: #ed9de0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.action-button:hover, .volume-button:hover {
+    background-color: #5511af;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

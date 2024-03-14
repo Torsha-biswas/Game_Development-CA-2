@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindPicturize Quiz - Game</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <div class="container">
+        <h1>Welcome, <span id="playerName"></span>!</h1>
+        <div id="imageContainer">
+            <img id="quizImage" src="" alt="Quiz Image">
+            <div id="timer">20</div>
+        </div>
+        <button id="playQuiz" class="action-button">Play the Quiz</button>
+        <button id="exitGame" class="action-button">Exit</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
